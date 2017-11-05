@@ -5,7 +5,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin 20s linear infinite, App-logo-grill 20s linear infinite;
+  animation: App-logo-spin 10s linear infinite, App-logo-grill 10s linear infinite;
   height: 80px;
   position: absolute;
   left: 48%;
@@ -46,11 +46,11 @@
 }
 
 @-webkit-keyframes App-logo-grill {
-  from {
+  100%, 0% {
     filter: brightness(100%);
   }
-  to {
-    filter: brightness(0%);
+  95% {
+    filter: brightness(10%);
   }
 }
 

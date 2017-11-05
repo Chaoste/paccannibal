@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Ghost from './Ghost.js';
 import Feed from './Feed.js';
 import Pacman from './Pacman.js';
 import * as modi from './PacmanModi.js';
@@ -27,6 +27,7 @@ class Level extends Component {
         <Feed x={x} y={y} dir={dir} />
         <Feed x={x} y={y} dir={dir} />
         <Feed x={x} y={y} dir={dir} />
+        <Ghost />
         <Pacman hasMoved={this.hasMoved} />
       </div>
     );

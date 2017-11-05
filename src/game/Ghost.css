@@ -1,0 +1,10 @@
+.ghost {
+  width: 200px;
+  height: 200px;
+  margin: 55px;
+
+  position: absolute;
+  left: 1350px;
+  right: -20px;
+  top: -28px;
+}
