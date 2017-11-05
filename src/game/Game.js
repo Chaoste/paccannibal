@@ -11,9 +11,10 @@ class Game extends Component {
   render() {
     return (
       <div className="game">
-        <Feed />
-        <Pacman />
-        <Level />
+        <Level>
+          <Feed />
+          <Pacman />
+        </Level>
       </div>
     );
   }

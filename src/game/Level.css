@@ -1,6 +1,13 @@
 .level {
-  height: 205px;
+  position: relative;
+  top: 10;
+  padding: 40px 20px;
+  bottom: 10;
+  left: 0;
+  right: 0;
+
+  height: 186px;
   width: 1400px;
-  border: 5px solid rgb(83, 70, 220);
+  border: 7px solid rgb(83, 70, 220);
   border-radius: 2em 2em;
 }
