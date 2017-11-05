@@ -5,9 +5,10 @@ import './AutoPacman.css';
 class AutoPacman extends Component {
   render() {
     return (
-      <div className="auto-pacman">
+      <div className={`auto-pacman ${this.props.isStarting ? 'moving' : ''} ${this.props.isEating ? 'eating' : ''}`}>
         <div className="pacman-top"></div>
         <div className="pacman-bottom"></div>
+        <div className="tail"></div>
       </div>
     );
   }

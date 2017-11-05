@@ -1,23 +1,53 @@
 
 .auto-pacman{
-  position: absolute;
   z-index: 2;
+  position: absolute;
+  z-index: 30;
+  padding-bottom: 250px;
 }
 
 .auto-pacman .pacman-top{
   background-color:yellow;
-  height:100px;
-  width:200px;
+  height:50px;
+  width:100px;
   border-radius:100px 100px 0 0;
   animation: spin1 0.5s infinite linear;
+  z-index: 20;
+  position: absolute;
+  top: 5px;
 }
 
 .auto-pacman .pacman-bottom{
   background-color:yellow;
-  height:100px;
-  width:200px;
+  height:50px;
+  width:100px;
   border-radius:0 0 100px 100px;
   animation: spin2 0.5s infinite linear;
+  z-index: 20;
+  position: absolute;
+  top: 55px;
+}
+
+.auto-pacman.moving {
+  transition: margin-left 600ms ease-in;
+  margin-left: 390px;
+}
+
+.auto-pacman.eating {
+  transition: margin-left 800ms ease-in;
+  margin-left: -300px;
+  margin-top: -15px;
+  transform: rotate(180deg);
+}
+
+.tail {
+  height: 120px;
+  width: 350px;
+  background: grey;
+  position: absolute;
+  top: 0;
+  z-index: 19;
+  margin-left: -290px;
 }
 
 /* Animation*/

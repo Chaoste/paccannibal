@@ -1,6 +1,7 @@
 .preview {
-  position: relative;
+  position: absolute;
   padding: 40px 20px;
-  height: 100px;
-  width: 300px;
+  height: 300px;
+  width: 250px;
+  overflow: hidden;
 }

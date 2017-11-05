@@ -9,9 +9,8 @@ import './Preview.css';
 class Preview extends Component {
   render() {
     return (
-      <div className="preview">
-        <RunningFeed />
-        <AutoPacman />
+      <div className={`preview ${this.props.isStarting ? 'moving' : ''} ${this.props.isEating ? 'eating' : ''}`}>
+        <AutoPacman isEating={this.props.isEating} isStarting={this.props.isStarting} />
       </div>
     );
   }
