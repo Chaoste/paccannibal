@@ -43,7 +43,7 @@
 .tail {
   height: 120px;
   width: 350px;
-  background: grey;
+  background: black;
   position: absolute;
   top: 0;
   z-index: 19;
