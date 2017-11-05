@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import Game from './game/Game.js';
 
 import './App.css';
-import salami from './009-salami.png';
+import salami from './res/009-salami.png';
 class App extends Component {
   state = {
     isStarted: false,
