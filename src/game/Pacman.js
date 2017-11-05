@@ -10,14 +10,29 @@ class Pacman extends Component {
     modus: modi.NONE,
   }
 
-  handleKeyPress = (event) => {
-    console.log(event.key === KEY_CODES.ARROW_LEFT)
-    console.log(event.key === KEY_CODES.ARROW_UP)
-    console.log(event.key === KEY_CODES.ARROW_RIGHT)
-    console.log(event.key === KEY_CODES.ARROW_DOWN)
-    if(event.key == 'Enter'){
-      console.log('enter press here! ')
+  componentDidMount = () => {
+    window.onkeyup = this.handleKeyPress;
+  }
+
+  translateKeyCode = (event) => {
+    switch(event.keyCode) {
+      case KEY_CODES.ARROW_LEFT:
+        return modi.LEFT;
+      case KEY_CODES.ARROW_RIGHT:
+        return modi.RIGHT;
+      case KEY_CODES.ARROW_UP:
+        return modi.UP;
+      case KEY_CODES.ARROW_DOWN:
+        return modi.DOWN;
+      default:
+        return undefined;
     }
+  }
+
+  handleKeyPress = (event) => {
+    this.setState({
+      modus: this.translateKeyCode(event) || this.state.modus,
+    })
   }
 
   getCSSModus() {
