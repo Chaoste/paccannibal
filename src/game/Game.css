@@ -1,0 +1,8 @@
+.game {
+  background-color: black;
+  position: absolute;
+  top: 190px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
