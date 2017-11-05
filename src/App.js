@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import logo from './logo.svg';
 import Game from './game/Game.js';
 
 import './App.css';
@@ -8,19 +7,21 @@ import salami from './res/009-salami.png';
 class App extends Component {
   state = {
     isStarted: false,
-  }
+  };
 
-  onClick = (event) => {
-    console.log(event)
+  onClick = event => {
+    console.log(event);
     this.setState({
       isStarted: true,
     });
-  }
+  };
 
   renderStartButton() {
     return (
       <div className="buttoncontainer">
-        <button className="start" onClick={this.onClick}>Start</button>
+        <button className="start" onClick={this.onClick}>
+          Start
+        </button>
       </div>
     );
   }
@@ -35,9 +36,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        {!this.state.isStarted ? (
-          this.renderStartButton()
-        ) : <Game/>}
+        {!this.state.isStarted ? this.renderStartButton() : <Game />}
       </div>
     );
   }
