@@ -4,6 +4,8 @@
   position: absolute;
   z-index: 30;
   padding-bottom: 250px;
+  opacity: 1;
+  transition: opacity 30s ease-out;
 }
 
 .auto-pacman .pacman-top{
@@ -50,6 +52,29 @@
   margin-left: -290px;
 }
 
+.dying-top{
+  background-color:yellow;
+  height:50px;
+  width:100px;
+  border-radius:100px 100px 0 0;
+  animation: spin1 0.5s infinite linear, opacity 20s linear;
+  z-index: 20;
+  position: absolute;
+  top: 5px;
+}
+
+.dying-bottom{
+  background-color:yellow;
+  height:50px;
+  width:100px;
+  border-radius:0 0 100px 100px;
+  animation: spin2 0.5s infinite linear, opacity 20s linear;
+  z-index: 20;
+  position: absolute;
+  top: 55px;
+}
+
+
 /* Animation*/
 
 @keyframes spin1 {
@@ -80,4 +105,14 @@
 @-webkit-keyframes spin2 {
 	0%  {transform: rotate(0deg);}
   50%{transform: rotate(35deg);}
+}
+
+
+@-webkit-keyframes opacity{
+  100%{
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
 }
