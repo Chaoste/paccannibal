@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Pacman from './Pacman.js';
 import Feed from './Feed.js';
+import Level from './Level.js';
 
 import './Game.css';
 
@@ -10,8 +11,10 @@ class Game extends Component {
   render() {
     return (
       <div className="game">
-        <Feed />
-        <Pacman />
+        <Level>
+          <Feed />
+          <Pacman />
+        </Level>
       </div>
     );
   }
