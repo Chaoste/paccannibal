@@ -3,6 +3,5 @@
   padding: 40px 20px;
   height: 300px;
   width: 250px;
-  overflow-y: hidden;
-  overflow-x: visible;
+  overflow: hidden;
 }
