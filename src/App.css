@@ -44,7 +44,7 @@
 }
 
 .start{
-  background: #00BFFF;
+  background: Crimson;
   color: #fff;
   margin: 10px;
   font-size : 25px;
@@ -74,7 +74,7 @@
 }
 
 .start:hover, .start:focus, .start:active {
-  background-color: DarkBlue;
+  background-color: DarkRed;
   color: white;
   text-decoration: underline;
   cursor: pointer;

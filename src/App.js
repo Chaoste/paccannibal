@@ -46,7 +46,7 @@ class App extends Component {
         <header className="App-header">
           <img src={salami} className="App-logo" alt="salami" />
           <img className="fire" src="https://www.gif-paradies.de/gifs/natur/feuer/feuer_0079.gif"/>
-          <h1 className="App-title"><b>WELCOME TO PACCANNIBAL</b></h1>
+          <h1 className="App-title">WELCOME TO PACCANNIBAL</h1>
         </header>
         <p className="App-intro" />
         {!this.state.isStarted ? this.renderStartButton() : <Game />}
