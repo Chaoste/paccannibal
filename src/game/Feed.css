@@ -1,9 +1,4 @@
-
 .feed {
-  width: 45px;
-  height: 45px;
-  border-radius: 30%;
-  -moz-animation: eat 1s linear 0s infinite;
   -webkit-animation: eat 1s linear 0s infinite;
   animation: eat 1s linear 0s infinite;
   position: absolute;
@@ -12,23 +7,16 @@
   z-index: 1;
 }
 
-
 @keyframes eat {
-	0% { box-shadow:
-      100px 65px 0 0 white,
-      300px 65px 0 0 white,
-      500px 65px 0 0 white,
-      700px 65px 0 0 white,
-      900px 65px 0 0 white,
-      1100px 65px 0 0 white,
-      1300px 65px 0 0 white;}
+  0% {
+    box-shadow: 100px 65px 0 0 white, 300px 65px 0 0 white, 500px 65px 0 0 white,
+      700px 65px 0 0 white, 900px 65px 0 0 white, 1100px 65px 0 0 white,
+      1300px 65px 0 0 white;
+  }
 
-100% { box-shadow:
-      0px 65px 0 0 white,
-      100px 65px 0 0 white,
-      300px 65px 0 0 white,
-      500px 65px 0 0 white,
-      700px 65px 0 0 white,
-      900px 65px 0 0 white,
-      1100px 65px 0 0 white;}
+  100% {
+    box-shadow: 0px 65px 0 0 white, 100px 65px 0 0 white, 300px 65px 0 0 white,
+      500px 65px 0 0 white, 700px 65px 0 0 white, 900px 65px 0 0 white,
+      1100px 65px 0 0 white;
+  }
 }
