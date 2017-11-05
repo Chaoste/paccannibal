@@ -1,12 +1,10 @@
-
 .feed {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin: 55px;
   z-index: 1;
   display: inline-block;
-  background: white;
-  border-radius: 30%;
+
   opacity: 1;
   animation: opacity 100ms;
 }

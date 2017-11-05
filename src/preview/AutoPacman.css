@@ -30,11 +30,11 @@
 
 .auto-pacman.moving {
   transition: margin-left 600ms ease-in;
-  margin-left: 300px;
+  margin-left: 390px;
 }
 
 .auto-pacman.eating {
-  transition: margin-left 1000ms ease-in;
+  transition: margin-left 800ms ease-in;
   margin-left: -300px;
   margin-top: -15px;
   transform: rotate(180deg);
