@@ -2,6 +2,9 @@
 .pacman{
   position: absolute;
   z-index: 2;
+  display: inline-block;
+  margin: 25px;
+  left: 25px;
 }
 
 .pacman-top{
