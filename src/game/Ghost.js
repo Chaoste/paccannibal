@@ -29,7 +29,7 @@ class Ghost extends Component {
   render() {
     return (
       <img
-        className={`ghost ${this.state.moving ? 'moving' : ''}`}
+        className={`ghost ${this.state.moving ? 'moving-ghost' : ''}`}
         src={this.mySrc}
       />
     );
