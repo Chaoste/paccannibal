@@ -20,7 +20,32 @@ class Pacman extends Component {
     window.onkeyup = this.handleKeyPress;
   }
 
+  hittingWall = (x, y) => {
+    return x < -15 || y < -15 || y > 113;
+  }
+
+  hittingGhots = (x, y) => {
+    const ghost = document.querySelector('.ghost');
+    const rect = this.node.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    const ghostRect = ghost.getBoundingClientRect();
+    const ghostX = ghostRect.left + ghostRect.width / 2;
+    const ghostY = ghostRect.top + ghostRect.height / 2;
+    return centerX - ghostX < 20 || centerY - ghostY < 20;
+  }
+
+  die = () => {
+    this.setState({
+      modus: modi.DYING,
+    });
+  }
+
   changePosition = (x, y) => {
+    if (this.hittingWall(this.state.x + x, this.state.y + y))
+      return;
+    if (this.hittingGhots(this.state.x + x, this.state.y + y))
+      this.die();
     this.setState({
       x: this.state.x + x,
       y: this.state.y + y,
