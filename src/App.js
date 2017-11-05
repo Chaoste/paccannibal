@@ -34,7 +34,7 @@ class App extends Component {
       <div className={`buttoncontainer ${this.state.isEating ? 'eating' : ''}`}>
         <Preview isStarting={this.state.isStarting} isEating={this.state.isEating} />
         <button className="start" onClick={this.onClick}>
-          Start
+          LETS GO!!!
         </button>
       </div>
     );
