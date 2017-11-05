@@ -5,7 +5,8 @@
 }
 
 .App-logo {
-  animation: App-logo-spin 10s linear infinite, App-logo-grill 10s linear infinite;
+  animation: App-logo-spin 10s linear infinite,
+    App-logo-grill 10s linear infinite;
   height: 80px;
   position: absolute;
   left: 48%;
@@ -44,7 +45,8 @@
 }
 
 @-webkit-keyframes App-logo-grill {
-  100%, 0% {
+  100%,
+  0% {
     filter: brightness(100%);
   }
   95% {
@@ -52,14 +54,14 @@
   }
 }
 
-.start{
+.start {
   background: Crimson;
   color: #fff;
   margin: 10px;
-  font-size : 25px;
+  font-size: 25px;
   height: 60px;
   width: 220px;
-  padding: .5rem;
+  padding: 0.5rem;
   line-height: 1.5rem;
   border: none;
   border-radius: 0.3em;
@@ -82,7 +84,9 @@
   opacity: 0;
 }
 
-.start:hover, .start:focus, .start:active {
+.start:hover,
+.start:focus,
+.start:active {
   background-color: DarkRed;
   color: white;
   text-decoration: underline;
@@ -102,7 +106,7 @@
   bottom: 0;
 }
 
-.fire{
+.fire {
   height: 150px;
   padding: 20px;
   position: absolute;
