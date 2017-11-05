@@ -13,7 +13,7 @@ class Pacman extends Component {
     x: 25,
     y: 38,
   }
-
+  node = undefined;
   timer = undefined;
 
   componentDidMount = () => {
@@ -25,6 +25,10 @@ class Pacman extends Component {
       x: this.state.x + x,
       y: this.state.y + y,
     });
+    const rect = this.node.getBoundingClientRect();
+    this.props.hasMoved(
+      rect.left + rect.width / 2, rect.top + rect.height / 2, this.state.modus
+    );
     return true;
   }
 
@@ -96,6 +100,7 @@ class Pacman extends Component {
       <div
         className={`pacman ${this.getCSSModus()}`}
         onKeyDown={this.handleKeyPress}
+        ref={n => this.node = n}
         style={{
           left: `${this.state.x}px`,
           top: `${this.state.y}px`,

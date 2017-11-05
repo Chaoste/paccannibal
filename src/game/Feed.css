@@ -6,7 +6,7 @@
   display: inline-block;
 
   opacity: 1;
-  animation: opacity 100ms;
+  transition: opacity 200ms;
 }
 
 .feed.hidden {
