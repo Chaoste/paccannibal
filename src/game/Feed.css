@@ -8,6 +8,7 @@
   animation: eat 1s linear 0s infinite;
   position: absolute;
   top: 60px;
+  left: 40px;
   z-index: 1;
 }
 

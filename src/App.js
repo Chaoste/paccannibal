@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Game from './game/Game.js';
+import Preview from './preview/Preview.js';
 
 import './App.css';
 import salami from './res/009-salami.png';
@@ -10,7 +11,6 @@ class App extends Component {
   };
 
   onClick = event => {
-    console.log(event);
     this.setState({
       isStarted: true,
     });
@@ -19,6 +19,7 @@ class App extends Component {
   renderStartButton() {
     return (
       <div className="buttoncontainer">
+        <Preview />
         <button className="start" onClick={this.onClick}>
           Start
         </button>
