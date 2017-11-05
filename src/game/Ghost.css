@@ -4,9 +4,9 @@
   margin: 55px;
   z-index: 30;
   position: absolute;
-  right: -1000px;
+  right: -500px;
   top: -28px;
-  transition: right 20s ease-in;
+  transition: right 15s ease-in;
 }
 
 .spinning {

@@ -51,14 +51,6 @@
   opacity: 0;
 }
 
-.pacman.dying .pacman-top {
-  animation: none;
-}
-
-.pacman.dying .pacman-bottom {
-  animation: none;
-}
-
 
 /* Animation*/
 
