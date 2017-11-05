@@ -7,19 +7,32 @@ import './App.css';
 import salami from './res/009-salami.png';
 class App extends Component {
   state = {
+    isStarting: false,
     isStarted: false,
+    isEating: false,
   };
 
   onClick = event => {
     this.setState({
-      isStarted: true,
+      isStarting: true,
     });
+    setTimeout(() => {
+      this.setState({
+        isStarting: false,
+        isEating: true,
+      });
+    }, 1000);
+    setTimeout(() => {
+      this.setState({
+        isStarted: true,
+      });
+    }, 2500);
   };
 
   renderStartButton() {
     return (
-      <div className="buttoncontainer">
-        <Preview />
+      <div className={`buttoncontainer ${this.state.isEating ? 'eating' : ''}`}>
+        <Preview isStarting={this.state.isStarting} isEating={this.state.isEating} />
         <button className="start" onClick={this.onClick}>
           Start
         </button>
