@@ -33,9 +33,7 @@ class App extends Component {
           <img src={salami} className="App-logo" alt="salami" />
           <h1 className="App-title">Welcome to Paccanibal</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p className="App-intro" />
         {!this.state.isStarted ? this.renderStartButton() : <Game />}
       </div>
     );
