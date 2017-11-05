@@ -6,16 +6,16 @@
 
 .pacman-top{
   background-color:yellow;
-  height:100px;
-  width:200px;
+  height:50px;
+  width:100px;
   border-radius:100px 100px 0 0;
   animation: spin1 0.5s infinite linear;
 }
 
 .pacman-bottom{
   background-color:yellow;
-  height:100px;
-  width:200px;
+  height:50px;
+  width:100px;
   border-radius:0 0 100px 100px;
   animation: spin2 0.5s infinite linear;
 }
