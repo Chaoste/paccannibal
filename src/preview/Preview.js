@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import AutoPacman from './AutoPacman.js';
-import RunningFeed from './RunningFeed.js';
 
 import './Preview.css';
 

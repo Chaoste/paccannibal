@@ -5,12 +5,14 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin 10s linear infinite, App-logo-grill 10s linear infinite;
   height: 80px;
   position: absolute;
   left: 48%;
   transform: translateX(-50%);
   z-index: 2;
+  transition: filter 30s ease-in;
+  filter: brightness(80%);
 }
 
 .App-header {
@@ -34,12 +36,21 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+@-webkit-keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes App-logo-grill {
+  100%, 0% {
+    filter: brightness(100%);
+  }
+  95% {
+    filter: brightness(10%);
   }
 }
 
