@@ -11,8 +11,6 @@
   left: 48%;
   transform: translateX(-50%);
   z-index: 2;
-  transition: filter 30s ease-in;
-  filter: brightness(80%);
 }
 
 .App-header {
