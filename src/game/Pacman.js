@@ -2,11 +2,22 @@ import React, { Component } from 'react';
 import './Pacman.css';
 
 import * as modi from './PacmanModi.js';
+import { KEY_CODES } from './Keys.js';
 
 /* Source: https://codepen.io/wifi/pen/olKxE */
 class Pacman extends Component {
   state = {
     modus: modi.NONE,
+  }
+
+  handleKeyPress = (event) => {
+    console.log(event.key === KEY_CODES.ARROW_LEFT)
+    console.log(event.key === KEY_CODES.ARROW_UP)
+    console.log(event.key === KEY_CODES.ARROW_RIGHT)
+    console.log(event.key === KEY_CODES.ARROW_DOWN)
+    if(event.key == 'Enter'){
+      console.log('enter press here! ')
+    }
   }
 
   getCSSModus() {
@@ -30,7 +41,7 @@ class Pacman extends Component {
 
   render() {
     return (
-      <div className={`pacman ${this.getCSSModus()}`}>
+      <div className={`pacman ${this.getCSSModus()}`} onKeyDown={this.handleKeyPress}>
         <div className="pacman-top"></div>
         <div className="pacman-bottom"></div>
       </div>
