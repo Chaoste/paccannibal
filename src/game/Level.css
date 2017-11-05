@@ -6,4 +6,6 @@
   border: 7px solid rgb(83, 70, 220);
   border-radius: 2em 2em;
   overflow: hidden;
+  width: 1500px;
+  max-width: 100%;
 }
