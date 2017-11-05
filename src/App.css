@@ -7,17 +7,27 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .App-header {
-  background-color: #00BFFF;
+  background-color: black;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 2em;
+  font-size: 3em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin-top: 100px;
+  font-family: Phosphate;
 }
 
 .App-intro {
@@ -71,7 +81,7 @@
 }
 
 .buttoncontainer {
-  background-color: gray;
+  background-color: Black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,4 +91,13 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.fire{
+  height: 150px;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
 }
