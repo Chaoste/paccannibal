@@ -5,6 +5,7 @@
   margin: 25px;
   left: 25px;
   top: 38px;
+  transition: opacity 500ms ease-out;
 }
 
 .pacman-top {
@@ -45,6 +46,19 @@
 .pacman.up {
   transform: rotate(270deg);
 }
+
+.pacman.dying {
+  opacity: 0;
+}
+
+.pacman.dying .pacman-top {
+  animation: none;
+}
+
+.pacman.dying .pacman-bottom {
+  animation: none;
+}
+
 
 /* Animation*/
 
