@@ -32,7 +32,7 @@ class Pacman extends Component {
     const ghostRect = ghost.getBoundingClientRect();
     const ghostX = ghostRect.left + ghostRect.width / 2;
     const ghostY = ghostRect.top + ghostRect.height / 2;
-    return Math.abs(centerX - ghostX) < 40 && Math.abs(centerY - ghostY) < 50;
+    return Math.abs(centerX - ghostX) < 80 && Math.abs(centerY - ghostY) < 80;
   }
 
   die = () => {
