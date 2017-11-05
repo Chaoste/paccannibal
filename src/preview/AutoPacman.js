@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import './Pacman.css';
-
-import * as modi from './PacmanModi.js';
+import './AutoPacman.css';
 
 /* Source: https://codepen.io/wifi/pen/olKxE */
-class Pacman extends Component {
-  state = {
-    modus: modi.NONE,
-  }
-
+class AutoPacman extends Component {
   render() {
     return (
-      <div className="pacman">
+      <div className="auto-pacman">
         <div className="pacman-top"></div>
         <div className="pacman-bottom"></div>
       </div>
@@ -19,4 +13,4 @@ class Pacman extends Component {
   }
 }
 
-export default Pacman;
+export default AutoPacman;

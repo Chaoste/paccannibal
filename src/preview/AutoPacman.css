@@ -1,10 +1,10 @@
 
-.pacman{
+.auto-pacman{
   position: absolute;
   z-index: 2;
 }
 
-.pacman-top{
+.auto-pacman .pacman-top{
   background-color:yellow;
   height:100px;
   width:200px;
@@ -12,7 +12,7 @@
   animation: spin1 0.5s infinite linear;
 }
 
-.pacman-bottom{
+.auto-pacman .pacman-bottom{
   background-color:yellow;
   height:100px;
   width:200px;
