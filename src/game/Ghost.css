@@ -14,7 +14,7 @@
   animation: spin3 0.5s infinite linear;
 }
 
-.moving {
+.moving-ghost {
   right: 1000px;
 }
 
