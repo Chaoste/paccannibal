@@ -4,9 +4,8 @@ import meat from '../res/011-meat.png';
 import meat2 from '../res/008-kebab.png';
 import meat3 from '../res/012-steak.png';
 import meat4 from '../res/013-fish.png';
-import meat5 from '../res/013-fish.png';
 
-const images = [meat, meat2, meat3, meat4, meat5];
+const images = [meat, meat2, meat3, meat4];
 
 class Feed extends Component {
   mySrc = undefined;
